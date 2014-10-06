@@ -367,7 +367,7 @@ body >header {
   width: 100%;
   -webkit-box-shadow: 2px 4px 5px rgba(3,3,3,0.2);
   box-shadow: 2px 4px 5px rgba(3,3,3,0.2);
-  background: url("/img/header.png") fixed center center no-repeat;
+  background: url("/img/header.jpg") fixed center center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -378,7 +378,7 @@ body >header {
 @media only screen and (min-width: 1024px) {
   body >header {
     padding: 1.8em 0 1.5em;
-    background: url("/img/header.png") fixed center center no-repeat;
+    background: url("/img/header.jpg") fixed center center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -433,11 +433,11 @@ body >header a {
   text-align: center;
   width: 100%;
   margin-left: 0.5em;
-  font-family: "Fontin", "lkf", "Kai", "Kaiti SC", "KaiTi", "BiauKai", "楷体", "楷体_GB2312", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+  font-family: "Kai", "Kaiti SC", "Fontin", "lkf", "KaiTi", "BiauKai", "楷体", "楷体_GB2312", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
 }
 #textlogo h1.site-name {
   width: 100%;
-  font-family: "covered_by_your_graceregular";
+  font-family: covered_by_your_graceregular, kai;
   font-size: 200%;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -466,6 +466,10 @@ body >header a {
   #textlogo h2.blog-motto {
     font-size: 110%;
   }
+}
+#textlogo a:hover {
+  text-decoration: none;
+  text-shadow: 0 0 0.2em #fff;
 }
 .navbar {
   position: absolute;
@@ -532,7 +536,7 @@ header nav ul li a {
   }
 }
 header nav ul li a:hover {
-  background: #dd2c11;
+  background: rgba(26,26,26,0.31);
   color: #e9cd4c;
 }
 .shownav {
@@ -1239,13 +1243,13 @@ footer.article-footer {
 @media only screen and (min-width: 568px) {
   .article-tags,
   .article-categories {
-    width: 50%;
+    width: 60%;
   }
 }
 @media only screen and (min-width: 768px) {
   .article-tags,
   .article-categories {
-    width: 30%;
+    width: 60%;
   }
 }
 .article-tags {
@@ -1777,12 +1781,6 @@ section.comment {
   -ms-transform: rotateZ(360deg);
   transform: rotateZ(360deg);
 }
-@media only screen and (min-width: 768px) {
-  .author-logo {
-    margin: 0 1em 0 0;
-    float: left;
-  }
-}
 @media only screen and (min-width: 1024px) {
   .author-logo {
     float: none;
@@ -1919,7 +1917,7 @@ footer {
   padding: 0 2% 0.5em;
 }
 #footer {
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
   overflow: hidden;
   position: relative;
@@ -1928,12 +1926,14 @@ footer {
   width: 100%;
   height: 14em;
   margin: 0 auto;
+  margin-left: 1.5em;
 }
 @media only screen and (min-width: 768px) {
   #footer .line {
     width: 10em;
     float: left;
     position: relative;
+    margin-left: 1.5em;
   }
 }
 #footer .line span {
@@ -1981,7 +1981,7 @@ footer {
   }
 }
 .info {
-  font-family: "covered_by_your_graceregular";
+  font-family: covered_by_your_graceregular, kai;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 150%;
@@ -1989,10 +1989,10 @@ footer {
   width: 90%;
   margin: 0 auto;
   color: #fff;
+  padding-top: 20px;
 }
 @media only screen and (min-width: 768px) {
   .info {
-    margin: 4.5em 0 2em 0;
     float: left;
     width: 75%;
   }
@@ -2055,7 +2055,7 @@ footer {
 .copyright {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "covered_by_your_graceregular";
+  font-family: covered_by_your_graceregular, kai;
   width: 100%;
   color: #fff;
   text-align: center;
