@@ -14,9 +14,11 @@ date: 2012-08-20 19:17:54
 
 插入代码:
 
-<pre class="brush: html; gutter: true">&lt;pre name=&quot;code&quot; class=&quot;c-sharp&quot;&gt;
+```{html}
+<pre name="code" class="c-sharp">
 ... some code here ...
-&lt;/pre&gt;</pre>
+</pre>
+```
 
 详细使用方法:
 
@@ -32,10 +34,13 @@ date: 2012-08-20 19:17:54
 
 效果:
 
-<pre class="brush: cpp; gutter: true">#include&lt;iostream&gt;
+```{cpp}
+#include<iostream>
 using namespace std;
 int main()
 {
-    cout&lt;&lt;&quot;Hello World!&quot;&lt;&lt;endl;
+    cout<<"Hello World!"<<endl;
     return 0;
-}</pre>
+}
+```
+

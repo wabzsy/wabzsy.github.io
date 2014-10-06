@@ -1,47 +1,48 @@
 title: "PHP 获取 文件大小,类型,创建/修改时间"
 tags:
   - PHP
-  - 程序生涯
 date: 2012-08-22 23:00:59
 ---
 
-<pre class="brush: php; gutter: true">int filesize(string $filename);//取得文件大小
+- 常用函数:
+
+```{php}
+int filesize(string $filename);//取得文件大小
 string filetype(string $filename);//取得文件类型
-int filemtime(string $filename);//取得文件修改时间</pre>
+int filemtime(string $filename);//取得文件修改时间
+```
 
-&nbsp;
+- 获取文件大小:
 
-获取文件大小:
+```{php}
+<?php
+    $filename = 'test.txt';
+    echo $filename.'文件大小为: '.filesize($filename).' bytes';
+?>
+```
 
-<pre class="brush: php; gutter: true">&lt;?php
-    $filename = &#039;test.txt&#039;;
-    echo $filename.&#039;文件大小为: &#039;.filesize($filename).&#039; bytes&#039;;
-?&gt;</pre>
+- 获取文件类型:
 
-&nbsp;
-
-获取文件类型:
-
-<pre class="brush: php; gutter: true">&lt;?php
-    $filename = &#039;test.txt&#039;;
+```{php}
+<?php
+    $filename = 'test.txt';
     echo filetype($filename);
-?&gt;</pre>
+?>
+```
 
-filetype 有八种返回结果:
+>  __filetype__ 有八种返回结果:
 
-fifo,char,dir,block,link,file,unknown和false
+> __fifo__,__char__,__dir__,__block__,__link__,__file__,__unknown__和__false__
 
-常见返回结果主要是file和dir
+> 常见返回结果主要是__file__和__dir__
 
-&nbsp;
+- 获取文件修改时间:
 
-获取文件修改时间:
+```{php}
+<?php
+    $filename = "test.txt";
+    echo "$filename 修改日期为：",date("Y-m-d H:i:s",filemtime($filename));
+?>
+```
 
-<pre class="brush: php; gutter: true">&lt;?php
-    $filename = &quot;test.txt&quot;;
-    echo &quot;$filename 修改日期为：&quot;,date(&quot;Y-m-d H:i:s&quot;,filemtime($filename));
-?&gt;</pre>
-
-filemtime返回值为UNIX格式的时间戳,要用date()函数来格式化
-
-&nbsp;
+> __filemtime()__返回值为***UNIX***格式的时间戳,要用__date()__函数来格式化

@@ -5,24 +5,26 @@ tags:
 date: 2012-08-22 10:27:51
 ---
 
-最新刚买了个Godaddy的主机,
+> 最新刚买了个Godaddy的主机,
 
-服务器用的是IIS7,管理后台不能自己添加MIME所以就想到了用Web.config来配置,
+> 服务器用的是IIS7,管理后台不能自己添加MIME所以就想到了用Web.config来配置,
 
-IIS7是支持Web.config的(不要误以为之后ASP.NET(.aspx)的程序才会用到Web.config)
+> IIS7是支持Web.config的(不要误以为之后ASP.NET(.aspx)的程序才会用到Web.config)
 
-下面是设置代码:
+> 下面是设置代码:
 
-<pre class="brush: xml; gutter: true">&lt;configuration&gt;
+```{xml}
+<configuration>
 
-    &lt;system.webServer&gt;
+    <system.webServer>
 
-        &lt;staticContent&gt;
-            &lt;mimeMap fileExtension=&quot;.vbox-extpack&quot; mimeType=&quot;application/octet-stream&quot; /&gt;
-     &lt;/staticContent&gt;
+        <staticContent>
+            <mimeMap fileExtension=".vbox-extpack" mimeType="application/octet-stream" />
+     </staticContent>
 
-    &lt;/system.webServer&gt;
+    </system.webServer>
 
-&lt;/configuration&gt;</pre>
+</configuration>
+```
 
-其中fileExtension是文件的扩展名,mimeType是文件的类型.
+> 其中fileExtension是文件的扩展名,mimeType是文件的类型.
