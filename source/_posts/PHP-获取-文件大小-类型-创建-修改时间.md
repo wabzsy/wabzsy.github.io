@@ -1,12 +1,15 @@
+image: "http://blog-for-wabzsy.qiniudn.com/images"
+date: 2012-08-22 23:00:59
 title: "PHP 获取 文件大小,类型,创建/修改时间"
+description: " "
+categories: "技术日志"
 tags:
   - PHP
-date: 2012-08-22 23:00:59
 ---
 
 - 常用函数:
 
-```{php}
+``` php
 int filesize(string $filename);//取得文件大小
 string filetype(string $filename);//取得文件类型
 int filemtime(string $filename);//取得文件修改时间
@@ -14,7 +17,7 @@ int filemtime(string $filename);//取得文件修改时间
 
 - 获取文件大小:
 
-```{php}
+``` php
 <?php
     $filename = 'test.txt';
     echo $filename.'文件大小为: '.filesize($filename).' bytes';
@@ -23,7 +26,7 @@ int filemtime(string $filename);//取得文件修改时间
 
 - 获取文件类型:
 
-```{php}
+``` php
 <?php
     $filename = 'test.txt';
     echo filetype($filename);
@@ -38,7 +41,7 @@ int filemtime(string $filename);//取得文件修改时间
 
 - 获取文件修改时间:
 
-```{php}
+``` php
 <?php
     $filename = "test.txt";
     echo "$filename 修改日期为：",date("Y-m-d H:i:s",filemtime($filename));

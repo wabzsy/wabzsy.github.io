@@ -1,9 +1,12 @@
+image: "http://blog-for-wabzsy.qiniudn.com/images"
+date: 2012-08-20 19:17:54
 title: 推荐两款 WordPress  代码高亮工具
+description: " "
+categories: "技术日志"
 tags:
   - WordPress
-  - 其他技术
+  - Web
   - 代码高亮
-date: 2012-08-20 19:17:54
 ---
 
 第一种:**Google Syntax Highlighter for WordPress**
@@ -14,9 +17,9 @@ date: 2012-08-20 19:17:54
 
 插入代码:
 
-```{html}
+``` html
 <pre name="code" class="c-sharp">
-... some code here ...
+... some c# code here ...
 </pre>
 ```
 
@@ -34,7 +37,7 @@ date: 2012-08-20 19:17:54
 
 效果:
 
-```{cpp}
+``` cpp
 #include<iostream>
 using namespace std;
 int main()

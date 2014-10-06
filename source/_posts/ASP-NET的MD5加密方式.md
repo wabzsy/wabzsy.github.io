@@ -1,20 +1,24 @@
+image: "http://blog-for-wabzsy.qiniudn.com/images"
+date: 2012-08-22 16:00:27
 title: ASP.NET的MD5加密方式
+description: " "
+categories: "技术日志"
 tags:
   - ASP.NET
-  - 程序生涯
-date: 2012-08-22 16:00:27
+  - C#
+  - md5加密
 ---
 
 添加命名空间:
 
-```{csharp}
+``` csharp
 using System.Security.Cryptography;
 using System.Text;
 ```
 
 自己写了个方法:
 
-```{csharp}
+``` csharp
 public class Safe
 {
     public static string Md5(string str)
@@ -34,7 +38,7 @@ public class Safe
 
 然后调用时使用:
 
-```{csharp}
+``` csharp
 string password = Safe.Md5(&quot;Your Password&quot;);
 ```
 就可以实现Md5加密了..

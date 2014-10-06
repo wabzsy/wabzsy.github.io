@@ -1,8 +1,12 @@
-title: 在IIS 7 环境下用Web.config 配置 MIME
-tags:
-  - 其他技术
-  - 服务器配置
+image: "http://blog-for-wabzsy.qiniudn.com/images"
 date: 2012-08-22 10:27:51
+title: 在IIS 7 环境下用Web.config 配置 
+description: " "
+categories: "技术日志"
+tags:
+  - 服务器配置
+  - IIS
+  - Web.config
 ---
 
 > 最新刚买了个Godaddy的主机,
@@ -13,7 +17,7 @@ date: 2012-08-22 10:27:51
 
 > 下面是设置代码:
 
-```{xml}
+``` xml
 <configuration>
 
     <system.webServer>
