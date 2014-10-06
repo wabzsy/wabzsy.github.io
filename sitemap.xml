@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.wabzsy.com/2012/08/22/PHP%E8%AE%BE%E7%BD%AE%E6%97%B6%E5%8C%BA/</loc>
+    <lastmod>2014-10-06T14:37:39.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://blog.wabzsy.com/2012/08/20/%E6%8E%A8%E8%8D%90%E4%B8%A4%E6%AC%BE-WordPress-%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2014-10-06T14:34:14.000Z</lastmod>
   </url>
@@ -19,11 +24,6 @@
   <url>
     <loc>http://blog.wabzsy.com/2012/08/22/%E5%9C%A8IIS-7-%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%94%A8Web-config-%E9%85%8D%E7%BD%AE-MIME/</loc>
     <lastmod>2014-10-06T10:37:34.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.wabzsy.com/2012/08/22/PHP%E8%AE%BE%E7%BD%AE%E6%97%B6%E5%8C%BA/</loc>
-    <lastmod>2014-10-06T10:35:53.000Z</lastmod>
   </url>
   
   <url>
