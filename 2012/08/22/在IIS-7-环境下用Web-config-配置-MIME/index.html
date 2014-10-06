@@ -13,7 +13,8 @@
 服务器用的是IIS7,管理后台不能自己添加MIME所以就想到了用Web.config来配置,
 IIS7是支持Web.config的(不要误以为之后ASP.NET(.aspx)的程序才会用到Web.config)
 下面是设置代码:
-&amp;lt;configuration">
+
+1234567891011&amp;lt">
     
     
     
@@ -93,7 +94,7 @@ IIS7是支持Web.config的(不要误以为之后ASP.NET(.aspx)的程序才会用
     </p>
   <p class="article-time">
     <time datetime="2012-08-22T02:27:51.000Z" itemprop="datePublished">2012-08-22</time>
-    更新日期:<time datetime="2014-10-05T17:17:47.000Z" itemprop="dateModified">2014-10-06</time>
+    更新日期:<time datetime="2014-10-06T10:37:34.000Z" itemprop="dateModified">2014-10-06</time>
     
   </p>
 </header>
@@ -105,23 +106,17 @@ IIS7是支持Web.config的(不要误以为之后ASP.NET(.aspx)的程序才会用
 		
 		</div>
 		
-		<p>最新刚买了个Godaddy的主机,</p>
+		<blockquote>
+<p>最新刚买了个Godaddy的主机,</p>
 <p>服务器用的是IIS7,管理后台不能自己添加MIME所以就想到了用Web.config来配置,</p>
 <p>IIS7是支持Web.config的(不要误以为之后ASP.NET(.aspx)的程序才会用到Web.config)</p>
 <p>下面是设置代码:</p>
-<pre class="brush: xml; gutter: true">&lt;configuration&gt;
+</blockquote>
+<figure class="highlight {xml}"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="title">configuration</span>&gt;</span></div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="title">system.webServer</span>&gt;</span></div><div class="line"></div><div class="line">        <span class="tag">&lt;<span class="title">staticContent</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="title">mimeMap</span> <span class="attribute">fileExtension</span>=<span class="value">".vbox-extpack"</span> <span class="attribute">mimeType</span>=<span class="value">"application/octet-stream"</span> /&gt;</span></div><div class="line">     <span class="tag">&lt;/<span class="title">staticContent</span>&gt;</span></div><div class="line"></div><div class="line">    <span class="tag">&lt;/<span class="title">system.webServer</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;/<span class="title">configuration</span>&gt;</span></div></pre></td></tr></table></figure>
 
-    &lt;system.webServer&gt;
-
-        &lt;staticContent&gt;
-            &lt;mimeMap fileExtension=&quot;.vbox-extpack&quot; mimeType=&quot;application/octet-stream&quot; /&gt;
-     &lt;/staticContent&gt;
-
-    &lt;/system.webServer&gt;
-
-&lt;/configuration&gt;</pre>
-
+<blockquote>
 <p>其中fileExtension是文件的扩展名,mimeType是文件的类型.</p>
+</blockquote>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -224,7 +219,7 @@ IIS7是支持Web.config的(不要误以为之后ASP.NET(.aspx)的程序才会用
 		
 			<li><a href="/tags/生活点滴/" title="生活点滴">生活点滴<sup>1</sup></a></li>
 		
-			<li><a href="/tags/程序生涯/" title="程序生涯">程序生涯<sup>4</sup></a></li>
+			<li><a href="/tags/程序生涯/" title="程序生涯">程序生涯<sup>1</sup></a></li>
 		
 		</ul>
 </div>
@@ -247,7 +242,7 @@ IIS7是支持Web.config的(不要误以为之后ASP.NET(.aspx)的程序才会用
   <div class="tagcloudlist">
     <p class="asidetitle">标签云</p>
     <div class="tagcloudlist clearfix">
-       <a href="/tags/ASP-NET/" style="font-size: 10.00px;">ASP.NET</a><a href="/tags/HTML/" style="font-size: 10.00px;">HTML</a><a href="/tags/PHP/" style="font-size: 15.00px;">PHP</a><a href="/tags/WordPress/" style="font-size: 10.00px;">WordPress</a><a href="/tags/代码高亮/" style="font-size: 10.00px;">代码高亮</a><a href="/tags/其他技术/" style="font-size: 15.00px;">其他技术</a><a href="/tags/服务器配置/" style="font-size: 10.00px;">服务器配置</a><a href="/tags/生活点滴/" style="font-size: 10.00px;">生活点滴</a><a href="/tags/程序生涯/" style="font-size: 20.00px;">程序生涯</a>
+       <a href="/tags/ASP-NET/" style="font-size: 10.00px;">ASP.NET</a><a href="/tags/HTML/" style="font-size: 10.00px;">HTML</a><a href="/tags/PHP/" style="font-size: 20.00px;">PHP</a><a href="/tags/WordPress/" style="font-size: 10.00px;">WordPress</a><a href="/tags/代码高亮/" style="font-size: 10.00px;">代码高亮</a><a href="/tags/其他技术/" style="font-size: 20.00px;">其他技术</a><a href="/tags/服务器配置/" style="font-size: 10.00px;">服务器配置</a><a href="/tags/生活点滴/" style="font-size: 10.00px;">生活点滴</a><a href="/tags/程序生涯/" style="font-size: 10.00px;">程序生涯</a>
     </div>
   </div>
 
