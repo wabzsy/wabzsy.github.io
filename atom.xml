@@ -4,7 +4,7 @@
   <subtitle><![CDATA[这里好像应该写点什么..]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://blog.wabzsy.com/"/>
-  <updated>2014-10-06T19:30:34.599Z</updated>
+  <updated>2014-10-06T19:38:41.283Z</updated>
   <id>http://blog.wabzsy.com/</id>
   
   <author>
@@ -18,8 +18,8 @@
     <title><![CDATA[Hello World]]></title>
     <link href="http://blog.wabzsy.com/2014/10/07/hello-world/"/>
     <id>http://blog.wabzsy.com/2014/10/07/hello-world/</id>
-    <published>2014-10-06T19:30:18.000Z</published>
-    <updated>2014-10-05T15:24:50.000Z</updated>
+    <published>2014-10-06T19:37:39.000Z</published>
+    <updated>2014-10-06T19:37:38.000Z</updated>
     <content type="html"><![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
 <h2 id="Quick_Start">Quick Start</h2>
 <h3 id="Create_a_new_post">Create a new post</h3>
@@ -42,6 +42,12 @@
     <summary type="html">
     <![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io]]>
     </summary>
+    
+      <category term="其他" scheme="http://blog.wabzsy.com/tags/%E5%85%B6%E4%BB%96/"/>
+    
+      <category term="Hexo" scheme="http://blog.wabzsy.com/tags/Hexo/"/>
+    
+      <category term="其他" scheme="http://blog.wabzsy.com/categories/%E5%85%B6%E4%BB%96/"/>
     
   </entry>
   

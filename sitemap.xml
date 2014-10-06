@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.wabzsy.com/2014/10/07/hello-world/</loc>
+    <lastmod>2014-10-06T19:37:38.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://blog.wabzsy.com/2012/08/22/ASP-NET%E7%9A%84MD5%E5%8A%A0%E5%AF%86%E6%96%B9%E5%BC%8F/</loc>
     <lastmod>2014-10-06T19:29:52.000Z</lastmod>
   </url>
@@ -44,11 +49,6 @@
   <url>
     <loc>http://blog.wabzsy.com/404.html</loc>
     <lastmod>2014-10-05T19:23:53.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.wabzsy.com/2014/10/07/hello-world/</loc>
-    <lastmod>2014-10-05T15:24:50.000Z</lastmod>
   </url>
   
 </urlset>
