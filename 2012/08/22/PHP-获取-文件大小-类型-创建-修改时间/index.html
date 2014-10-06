@@ -9,20 +9,15 @@
     
     <meta name="author" content="小墨(wabzsy)">
     
-    <meta name="description" content="常用函数:
-
-123int filesize(string $filename);//取得文件大小string filetype(string $filename);//取得文件类型int filemtime(string $filename);//取得文件修改时间
-
-
-获取文件大小:
-
-1234&amp;">
+    <meta name="description" itemprop="description" content=" ">
     
     
     
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="wabzsy" />
     <meta name="twitter:title" content="PHP 获取 文件大小,类型,创建/修改时间 | 小墨(wabzsy)" />
+      
+        <meta name="twitter:description" content=" " />
       
     
     
@@ -96,7 +91,7 @@
     </p>
   <p class="article-time">
     <time datetime="2012-08-22T15:00:59.000Z" itemprop="datePublished">2012-08-22</time>
-    更新日期:<time datetime="2014-10-06T13:41:14.000Z" itemprop="dateModified">2014-10-06</time>
+    更新日期:<time datetime="2014-10-06T19:28:08.000Z" itemprop="dateModified">2014-10-07</time>
     
   </p>
 </header>
@@ -111,17 +106,17 @@
 		<ul>
 <li>常用函数:</li>
 </ul>
-<figure class="highlight {php}"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">int</span> filesize(<span class="keyword">string</span> <span class="variable">$filename</span>);<span class="comment">//取得文件大小</span></div><div class="line"><span class="keyword">string</span> filetype(<span class="keyword">string</span> <span class="variable">$filename</span>);<span class="comment">//取得文件类型</span></div><div class="line"><span class="keyword">int</span> filemtime(<span class="keyword">string</span> <span class="variable">$filename</span>);<span class="comment">//取得文件修改时间</span></div></pre></td></tr></table></figure>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">int filesize(string <span class="variable">$filename</span>);<span class="comment">//取得文件大小</span></div><div class="line">string filetype(string <span class="variable">$filename</span>);<span class="comment">//取得文件类型</span></div><div class="line">int filemtime(string <span class="variable">$filename</span>);<span class="comment">//取得文件修改时间</span></div></pre></td></tr></table></figure>
 
 <ul>
 <li>获取文件大小:</li>
 </ul>
-<figure class="highlight {php}"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="php"><span class="preprocessor">&lt;?php</span></span></div><div class="line">    <span class="variable">$filename</span> = <span class="string">'test.txt'</span>;</div><div class="line">    <span class="keyword">echo</span> <span class="variable">$filename</span>.<span class="string">'文件大小为: '</span>.filesize(<span class="variable">$filename</span>).<span class="string">' bytes'</span>;</div><div class="line"><span class="preprocessor">?&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="preprocessor">&lt;?php</span></div><div class="line">    <span class="variable">$filename</span> = <span class="string">'test.txt'</span>;</div><div class="line">    <span class="keyword">echo</span> <span class="variable">$filename</span>.<span class="string">'文件大小为: '</span>.filesize(<span class="variable">$filename</span>).<span class="string">' bytes'</span>;</div><div class="line"><span class="preprocessor">?&gt;</span></div></pre></td></tr></table></figure>
 
 <ul>
 <li>获取文件类型:</li>
 </ul>
-<figure class="highlight {php}"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="php"><span class="preprocessor">&lt;?php</span></span></div><div class="line">    <span class="variable">$filename</span> = <span class="string">'test.txt'</span>;</div><div class="line">    <span class="keyword">echo</span> filetype(<span class="variable">$filename</span>);</div><div class="line"><span class="preprocessor">?&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="preprocessor">&lt;?php</span></div><div class="line">    <span class="variable">$filename</span> = <span class="string">'test.txt'</span>;</div><div class="line">    <span class="keyword">echo</span> filetype(<span class="variable">$filename</span>);</div><div class="line"><span class="preprocessor">?&gt;</span></div></pre></td></tr></table></figure>
 
 <blockquote>
 <p> <strong>filetype</strong> 有八种返回结果:</p>
@@ -131,7 +126,7 @@
 <ul>
 <li>获取文件修改时间:</li>
 </ul>
-<figure class="highlight {php}"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="php"><span class="preprocessor">&lt;?php</span></span></div><div class="line">    <span class="variable">$filename</span> = <span class="string">"test.txt"</span>;</div><div class="line">    <span class="keyword">echo</span> <span class="string">"$filename 修改日期为："</span>,date(<span class="string">"Y-m-d H:i:s"</span>,filemtime(<span class="variable">$filename</span>));</div><div class="line"><span class="preprocessor">?&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="preprocessor">&lt;?php</span></div><div class="line">    <span class="variable">$filename</span> = <span class="string">"test.txt"</span>;</div><div class="line">    <span class="keyword">echo</span> <span class="string">"$filename 修改日期为："</span>,date(<span class="string">"Y-m-d H:i:s"</span>,filemtime(<span class="variable">$filename</span>));</div><div class="line"><span class="preprocessor">?&gt;</span></div></pre></td></tr></table></figure>
 
 <blockquote>
 <p><strong>filemtime()</strong>返回值为<strong><em>UNIX</em></strong>格式的时间戳,要用<strong>date()</strong>函数来格式化</p>
@@ -145,6 +140,11 @@
   <span></span> <a href="/tags/PHP/">PHP</a>
   </div>
 
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/技术日志/">技术日志</a>
+</div>
 
 
 
@@ -160,7 +160,7 @@
 <nav class="article-nav clearfix">
  
  <div class="prev" >
- <a href="/2014/10/05/hello-world/" title="Hello World">
+ <a href="/2014/10/07/hello-world/" title="Hello World">
   <strong>PREVIOUS:</strong><br/>
   <span>
   Hello World</span>
@@ -216,6 +216,17 @@
 </div>
 
   
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+			<li><a href="/categories/其他/" title="其他">其他<sup>1</sup></a></li>
+		
+			<li><a href="/categories/技术日志/" title="技术日志">技术日志<sup>6</sup></a></li>
+		
+		</ul>
+</div>
+
 
   
 <div class="tagslist">
@@ -224,21 +235,29 @@
 		
 			<li><a href="/tags/ASP-NET/" title="ASP.NET">ASP.NET<sup>1</sup></a></li>
 		
+			<li><a href="/tags/C/" title="C#">C#<sup>1</sup></a></li>
+		
 			<li><a href="/tags/HTML/" title="HTML">HTML<sup>1</sup></a></li>
+		
+			<li><a href="/tags/IIS/" title="IIS">IIS<sup>1</sup></a></li>
+		
+			<li><a href="/tags/JavaScript/" title="JavaScript">JavaScript<sup>1</sup></a></li>
 		
 			<li><a href="/tags/PHP/" title="PHP">PHP<sup>2</sup></a></li>
 		
+			<li><a href="/tags/Web/" title="Web">Web<sup>2</sup></a></li>
+		
+			<li><a href="/tags/Web-config/" title="Web.config">Web.config<sup>1</sup></a></li>
+		
 			<li><a href="/tags/WordPress/" title="WordPress">WordPress<sup>1</sup></a></li>
+		
+			<li><a href="/tags/md5加密/" title="md5加密">md5加密<sup>1</sup></a></li>
 		
 			<li><a href="/tags/代码高亮/" title="代码高亮">代码高亮<sup>1</sup></a></li>
 		
-			<li><a href="/tags/其他技术/" title="其他技术">其他技术<sup>2</sup></a></li>
-		
 			<li><a href="/tags/服务器配置/" title="服务器配置">服务器配置<sup>1</sup></a></li>
 		
-			<li><a href="/tags/生活点滴/" title="生活点滴">生活点滴<sup>1</sup></a></li>
-		
-			<li><a href="/tags/程序生涯/" title="程序生涯">程序生涯<sup>1</sup></a></li>
+			<li><a href="/tags/纪念/" title="纪念">纪念<sup>1</sup></a></li>
 		
 		</ul>
 </div>
@@ -247,8 +266,10 @@
   <div class="linkslist">
   <p class="asidetitle">友情链接</p>
     <ul>
-      <li><a href="http://gengbiao.me" target="_blank" title="gengbiao">Coney's Blog</a></li>
+      <li><a href="http://blog.wabzsy.com/" target="_blank" title="博客首页">博客首页</a></li>
+      <li><a href="https://github.com/wabzsy/" target="_blank" title="我的GitHub">我的GitHub</a></li>
       <li><a href="http://hexo.io" target="_blank" title="Hexo">Hexo</a></li>
+      <li><a href="" target="_blank" title=""></a></li>
     </ul>
 </div>
 
@@ -261,7 +282,7 @@
   <div class="tagcloudlist">
     <p class="asidetitle">标签云</p>
     <div class="tagcloudlist clearfix">
-       <a href="/tags/ASP-NET/" style="font-size: 10.00px;">ASP.NET</a><a href="/tags/HTML/" style="font-size: 10.00px;">HTML</a><a href="/tags/PHP/" style="font-size: 20.00px;">PHP</a><a href="/tags/WordPress/" style="font-size: 10.00px;">WordPress</a><a href="/tags/代码高亮/" style="font-size: 10.00px;">代码高亮</a><a href="/tags/其他技术/" style="font-size: 20.00px;">其他技术</a><a href="/tags/服务器配置/" style="font-size: 10.00px;">服务器配置</a><a href="/tags/生活点滴/" style="font-size: 10.00px;">生活点滴</a><a href="/tags/程序生涯/" style="font-size: 10.00px;">程序生涯</a>
+       <a href="/tags/ASP-NET/" style="font-size: 10.00px;">ASP.NET</a><a href="/tags/C/" style="font-size: 10.00px;">C#</a><a href="/tags/HTML/" style="font-size: 10.00px;">HTML</a><a href="/tags/IIS/" style="font-size: 10.00px;">IIS</a><a href="/tags/JavaScript/" style="font-size: 10.00px;">JavaScript</a><a href="/tags/PHP/" style="font-size: 20.00px;">PHP</a><a href="/tags/Web/" style="font-size: 20.00px;">Web</a><a href="/tags/Web-config/" style="font-size: 10.00px;">Web.config</a><a href="/tags/WordPress/" style="font-size: 10.00px;">WordPress</a><a href="/tags/md5加密/" style="font-size: 10.00px;">md5加密</a><a href="/tags/代码高亮/" style="font-size: 10.00px;">代码高亮</a><a href="/tags/服务器配置/" style="font-size: 10.00px;">服务器配置</a><a href="/tags/纪念/" style="font-size: 10.00px;">纪念</a>
     </div>
   </div>
 
