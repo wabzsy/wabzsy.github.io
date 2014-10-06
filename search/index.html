@@ -1,5 +1,5 @@
 
-  <!DOCTYPE HTML>
+ <!DOCTYPE HTML>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
@@ -7,7 +7,7 @@
   <meta name="360-site-verification" content="67fbcc5a67f4c65c057315b28fa0b2c8" />
 <meta name="google-site-verification" content="2GzxQ0VtXwTSUdmGm6DzcmhTzM_I9QmzCb_pzpMzD88" />
   
-    <title>Tag: 代码高亮 | 小墨(wabzsy)</title>
+    <title>search | 小墨(wabzsy)</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="小墨(wabzsy)">
@@ -18,7 +18,7 @@
     
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="wabzsy" />
-    <meta name="twitter:title" content="Tag: 代码高亮 | 小墨(wabzsy)" />
+    <meta name="twitter:title" content="search | 小墨(wabzsy)" />
       
     
     
@@ -80,27 +80,26 @@
       </header>
       <div id="container">
         
-
-<div class="archive-title" >
-  <h2 class="tag-icon">代码高亮</h2>
-  
+<div  id="main" class="page">
+  <div id='cse' style='width:100%;text-align:center'>正在加载搜索结果，请稍等。</div>
 </div>
-<div id="main" class="archive-part clearfix">
-  <div id="archive-page">
+<script src="http://www.google.com.hk/jsapi" type="text/javascript"></script>
+<script type="text/javascript">
+google.load('search', '1', {language : 'zh-CN',style: google.loader.themes.MINIMALIST});
+google.setOnLoadCallback(function(){
+  var customSearchControl = new google.search.CustomSearchControl('009893194699044207551:voxxpdfqx8i');
+  customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+  var options = new google.search.DrawOptions();
+  options.setAutoComplete(true);
+  customSearchControl.draw('cse', options);
+  var match = location.search.match(/q=([^&]*)(&|$)/);
+  if(match && match[1]){
+    var search = decodeURIComponent(match[1]); 
+    customSearchControl.execute(search);
+  }
+},true);
+</script>
 
-  <section class="post" itemscope itemprop="blogPost">
-  
-    <a href="/2012/08/20/推荐两款-WordPress-代码高亮工具/" title="推荐两款 WordPress  代码高亮工具" itemprop="url">
-  
-    <h1 itemprop="name">推荐两款 WordPress  代码高亮工具</h1>
-    
-    <time datetime="2012-08-20T11:17:54.000Z" itemprop="datePublished">2012-08-20</time>
-  </a>
-</section>
-
-
-  </div>
-</div>
 
       </div>
       <script src="/js/jquery-2.1.0.min.js"></script>
