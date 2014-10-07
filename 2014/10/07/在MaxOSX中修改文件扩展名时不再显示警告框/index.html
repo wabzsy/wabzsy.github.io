@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>ASP.NET的MD5加密方式 | 小墨(wabzsy)</title>
+    <title>在MaxOSX中修改文件扩展名时不再显示警告框 | 小墨(wabzsy)</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="小墨(wabzsy)">
@@ -15,7 +15,7 @@
     
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="wabzsy" />
-    <meta name="twitter:title" content="ASP.NET的MD5加密方式 | 小墨(wabzsy)" />
+    <meta name="twitter:title" content="在MaxOSX中修改文件扩展名时不再显示警告框 | 小墨(wabzsy)" />
       
         <meta name="twitter:description" content=" " />
       
@@ -83,15 +83,15 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2012/08/22/ASP-NET的MD5加密方式/" title="ASP.NET的MD5加密方式" itemprop="url">ASP.NET的MD5加密方式</a>
+      <a href="/2014/10/07/在MaxOSX中修改文件扩展名时不再显示警告框/" title="在MaxOSX中修改文件扩展名时不再显示警告框" itemprop="url">在MaxOSX中修改文件扩展名时不再显示警告框</a>
   </h1>
   <p class="article-author">By
     
       <a href="https://plus.google.com/117113067752764440000?rel=author" title="小墨(wabzsy)" target="_blank" itemprop="author">小墨(wabzsy)</a>
     </p>
   <p class="article-time">
-    <time datetime="2012-08-22T08:00:27.000Z" itemprop="datePublished">2012-08-22</time>
-    更新日期:<time datetime="2014-10-06T19:29:52.000Z" itemprop="dateModified">2014-10-07</time>
+    <time datetime="2014-10-07T15:08:05.000Z" itemprop="datePublished">2014-10-07</time>
+    更新日期:<time datetime="2014-10-07T18:12:20.000Z" itemprop="dateModified">2014-10-08</time>
     
   </p>
 </header>
@@ -103,25 +103,29 @@
 		
 		</div>
 		
-		<p>添加命名空间:</p>
-<figure class="highlight csharp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">using</span> System.Security.Cryptography;</div><div class="line"><span class="keyword">using</span> System.Text;</div></pre></td></tr></table></figure>
+		<p>每当在我修改文件扩展名时,Mac总会弹出这样一个提示框:</p>
+<p><img src="http://blog-for-wabzsy.qiniudn.com/images/在MaxOSX中修改文件扩展名时不再显示警告框/1.png" alt=""></p>
+<p>怎么将它去掉呢?其实很简单,只要打开<strong><code>终端</code></strong>,在里面输入如下命令:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">defaults write com.apple.finder FXEnableExtensionChangeWarning -bool <span class="literal">false</span></div></pre></td></tr></table></figure>
 
-<p>自己写了个方法:</p>
-<figure class="highlight csharp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="keyword">class</span> Safe</div><div class="line">{</div><div class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">string</span> <span class="title">Md5</span>(<span class="keyword">string</span> str)</div><div class="line">    {</div><div class="line">        <span class="keyword">try</span></div><div class="line">        {</div><div class="line">            <span class="keyword">byte</span>[] hashvalue = (<span class="keyword">new</span> MD5CryptoServiceProvider()).ComputeHash(Encoding.UTF8.GetBytes(str));</div><div class="line">            <span class="keyword">return</span> BitConverter.ToString(hashvalue);</div><div class="line">        }</div><div class="line">        <span class="keyword">catch</span></div><div class="line">        {</div><div class="line">            <span class="keyword">return</span> String.Empty;</div><div class="line">        }</div><div class="line">    }</div><div class="line">}</div></pre></td></tr></table></figure>
+<p>然后回车,再输入:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">killall Finder</div></pre></td></tr></table></figure>
 
-<p>然后调用时使用:</p>
-<figure class="highlight csharp"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">string</span> password = Safe.Md5(&quot;Your Password&quot;);</div></pre></td></tr></table></figure>
+<p>这样这个警告框就被禁用了~</p>
+<p>如果想恢复这个提示框,可以用这个命令:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">defaults write com.apple.finder FXEnableExtensionChangeWarning -bool <span class="literal">true</span></div></pre></td></tr></table></figure>
 
-<p>就可以实现Md5加密了..</p>
-<p>ASP.NET(C#)的md5比较特殊,是47位:00-11-22-33-44-55-66-77-88-99-AA-BB-CC-DD-EE-FF这种形式的,</p>
-<p>所以在数据库里添加字段时不要建成常规的32位,要不然会出现&#8221;将截断字符串或二进制数据&#8221;这种错误.</p>
+<p>回车,再输入:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">killall Finder</div></pre></td></tr></table></figure>
+
+<p>就这样~</p>
   
 	</div>
 		<footer class="article-footer clearfix">
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/ASP-NET/">ASP.NET</a><a href="/tags/C/">C#</a><a href="/tags/md5加密/">md5加密</a>
+  <span></span> <a href="/tags/MacOSX/">MacOSX</a>
   </div>
 
 
@@ -134,7 +138,7 @@
 
 <div class="article-share" id="share">
 
-  <div data-url="http://blog.wabzsy.com/2012/08/22/ASP-NET的MD5加密方式/" data-title="ASP.NET的MD5加密方式 | 小墨(wabzsy)" data-tsina="2277307553" class="share clearfix">
+  <div data-url="http://blog.wabzsy.com/2014/10/07/在MaxOSX中修改文件扩展名时不再显示警告框/" data-title="在MaxOSX中修改文件扩展名时不再显示警告框 | 小墨(wabzsy)" data-tsina="2277307553" class="share clearfix">
   </div>
 
 </div>
@@ -143,19 +147,11 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2012/08/22/PHP-获取-文件大小-类型-创建-修改时间/" title="PHP 获取 文件大小,类型,创建/修改时间">
-  <strong>PREVIOUS:</strong><br/>
-  <span>
-  PHP 获取 文件大小,类型,创建/修改时间</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2012/08/22/PHP设置时区/"  title="PHP设置时区">
+<a href="/2014/10/07/在GitHub上创建免费的个人博客-Hexo版/"  title="在GitHub上创建免费的个人博客(Hexo版)">
  <strong>NEXT:</strong><br/> 
- <span>PHP设置时区
+ <span>在GitHub上创建免费的个人博客(Hexo版)
 </span>
 </a>
 </div>

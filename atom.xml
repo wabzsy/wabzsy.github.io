@@ -4,7 +4,7 @@
   <subtitle><![CDATA[这里好像应该写点什么..]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://blog.wabzsy.com/"/>
-  <updated>2014-10-06T19:38:41.283Z</updated>
+  <updated>2014-10-07T18:16:12.489Z</updated>
   <id>http://blog.wabzsy.com/</id>
   
   <author>
@@ -13,6 +13,60 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[在MaxOSX中修改文件扩展名时不再显示警告框]]></title>
+    <link href="http://blog.wabzsy.com/2014/10/07/%E5%9C%A8MaxOSX%E4%B8%AD%E4%BF%AE%E6%94%B9%E6%96%87%E4%BB%B6%E6%89%A9%E5%B1%95%E5%90%8D%E6%97%B6%E4%B8%8D%E5%86%8D%E6%98%BE%E7%A4%BA%E8%AD%A6%E5%91%8A%E6%A1%86/"/>
+    <id>http://blog.wabzsy.com/2014/10/07/在MaxOSX中修改文件扩展名时不再显示警告框/</id>
+    <published>2014-10-07T15:08:05.000Z</published>
+    <updated>2014-10-07T18:12:20.000Z</updated>
+    <content type="html"><![CDATA[<p>每当在我修改文件扩展名时,Mac总会弹出这样一个提示框:</p>
+<p><img src="http://blog-for-wabzsy.qiniudn.com/images/在MaxOSX中修改文件扩展名时不再显示警告框/1.png" alt=""></p>
+<p>怎么将它去掉呢?其实很简单,只要打开<strong><code>终端</code></strong>,在里面输入如下命令:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">defaults write com.apple.finder FXEnableExtensionChangeWarning -bool <span class="literal">false</span></div></pre></td></tr></table></figure>
+
+<p>然后回车,再输入:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">killall Finder</div></pre></td></tr></table></figure>
+
+<p>这样这个警告框就被禁用了~</p>
+<p>如果想恢复这个提示框,可以用这个命令:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">defaults write com.apple.finder FXEnableExtensionChangeWarning -bool <span class="literal">true</span></div></pre></td></tr></table></figure>
+
+<p>回车,再输入:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">killall Finder</div></pre></td></tr></table></figure>
+
+<p>就这样~</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[ ]]>
+    
+    </summary>
+    
+      <category term="MacOSX" scheme="http://blog.wabzsy.com/tags/MacOSX/"/>
+    
+      <category term="技术日志" scheme="http://blog.wabzsy.com/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[在GitHub上创建免费的个人博客(Hexo版)]]></title>
+    <link href="http://blog.wabzsy.com/2014/10/07/%E5%9C%A8GitHub%E4%B8%8A%E5%88%9B%E5%BB%BA%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-Hexo%E7%89%88/"/>
+    <id>http://blog.wabzsy.com/2014/10/07/在GitHub上创建免费的个人博客-Hexo版/</id>
+    <published>2014-10-06T21:51:47.000Z</published>
+    <updated>2014-10-07T18:15:21.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="前言">前言</h1>
+<h2 id="为什么要用GitHub">为什么要用GitHub</h2>
+]]></content>
+    <summary type="html">
+    <![CDATA[ ]]>
+    
+    </summary>
+    
+      <category term="其他" scheme="http://blog.wabzsy.com/tags/%E5%85%B6%E4%BB%96/"/>
+    
+      <category term="草稿" scheme="http://blog.wabzsy.com/categories/%E8%8D%89%E7%A8%BF/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Hello World]]></title>
