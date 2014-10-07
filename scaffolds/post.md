@@ -1,8 +1,8 @@
-image: "http://blog-for-wabzsy.qiniudn.com/images"
 date: {{date}}
+image: "http://blog-for-wabzsy.qiniudn.com/images/{{title}}"
 title: {{title}}
 description: " "
-categories: "默认分类"
+categories: "草稿"
 tags: 
   - "其他"
 ---
