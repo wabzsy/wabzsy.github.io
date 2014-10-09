@@ -437,7 +437,7 @@ body >header a {
 }
 #textlogo h1.site-name {
   width: 100%;
-  font-family: covered_by_your_graceregular, kai;
+  font-family: covered_by_your_graceregular, "Kai", "Kaiti SC", "Fontin", "lkf", "KaiTi", "BiauKai", "楷体", "楷体_GB2312", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
   font-size: 200%;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
